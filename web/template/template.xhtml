@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <f:view>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <h:head>
+                <title><ui:insert name="title">EvME</ui:insert></title>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+
+            </h:head>
+            <h:body>
+                <div id="menu">
+                    <ui:insert name="menu">
+                        <ui:include src="./menu.xhtml" />
+                    </ui:insert>
+                </div>
+                <div id="content" class="body">
+                    <ui:insert name="body">Página mal configurada</ui:insert>
+                </div>
+                <div id="footer">
+                    <ui:insert name="pie">
+                        <ui:include src="./footer.xhtml" />
+                    </ui:insert>
+                </div>
+                
+                <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+            </h:body>
+        </html>
+    </f:view>
+</ui:composition>

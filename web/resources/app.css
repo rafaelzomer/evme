@@ -1,0 +1,31 @@
+* {
+    font-family: 'Roboto', 'Helvetica', 'Arial';
+}
+
+.menu {
+    background-color: #1c7cd6;
+    padding: 10px 50px;
+    line-height: 1.5;
+    list-style: none;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.body {
+    padding: 40px 50px;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 40px 50px;
+    line-height: 1.5;
+}
